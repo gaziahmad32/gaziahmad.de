@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gazi Ahmad – Unternehmergeist mit Haltung</title>
-  <meta name="description" content="Gazi Ahmad unterstützt Selbstständige und Unternehmer mit echter Umsetzung, strategischem Sparring und messbaren Ergebnissen.">
-  <meta name="keywords" content="Gazi Ahmad, Selbstständigkeit, Coach, Beratung, Vertrieb, Skalierung, Positionierung, Umsetzung, Business Mentor, GZA MOTORS, Erfolgsgeschichte">
+  <title>Gazi Ahmad – Von 6 auf 7 Stellen ohne Chaos</title>
+  <meta name="description" content="Gazi Ahmad hilft Unternehmern beim Sprung von 6 auf 7-stellige Umsätze - mit weniger Chaos, niedrigeren Kosten und maximiertem Profit durch bewährte 1:1 Praxis-Systeme.">
+  <meta name="keywords" content="Gazi Ahmad, Skalierung, 7-stelliger Umsatz, Kostenreduktion, Automatisierung, KI, Workflow-Optimierung, Business-Praxis, Profit-Maximierung">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -18,9 +18,12 @@
       --accent-navy: #1E3A8A;
       --accent-silver: #C0C7D1;
       --accent-light-navy: #3B82F6;
+      --accent-success: #10B981;
+      --accent-warning: #F59E0B;
       --border-subtle: #2A3142;
       --shadow-premium: rgba(30, 58, 138, 0.2);
       --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+      --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
       --gradient-secondary: linear-gradient(135deg, #C0C7D1 0%, #E5E7EB 100%);
       --gradient-bg: linear-gradient(180deg, #0A0E1A 0%, #1A1F2E 100%);
     }
@@ -138,7 +141,7 @@
     }
 
     .hero-text h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: 800;
       line-height: 1.1;
       margin-bottom: 1.5rem;
@@ -150,9 +153,9 @@
 
     .hero-subtitle {
       font-size: 1.25rem;
-      color: var(--text-secondary);
+      color: var(--accent-success);
       margin-bottom: 2rem;
-      font-weight: 300;
+      font-weight: 600;
     }
 
     .hero-description {
@@ -162,11 +165,27 @@
       line-height: 1.8;
     }
 
+    .problem-highlight {
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid var(--accent-warning);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+    }
+
+    .solution-highlight {
+      background: rgba(16, 185, 129, 0.1);
+      border-left: 4px solid var(--accent-success);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+    }
+
     .cta-premium {
       display: inline-flex;
       align-items: center;
       gap: 0.75rem;
-      background: var(--gradient-primary);
+      background: var(--gradient-success);
       color: white;
       padding: 1rem 2.5rem;
       border-radius: 50px;
@@ -174,7 +193,7 @@
       font-weight: 700;
       font-size: 1.1rem;
       transition: all 0.3s ease;
-      box-shadow: 0 10px 30px var(--shadow-premium);
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
       position: relative;
       overflow: hidden;
     }
@@ -196,7 +215,7 @@
 
     .cta-premium:hover {
       transform: translateY(-2px);
-      box-shadow: 0 15px 40px var(--shadow-premium);
+      box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
     }
 
     .hero-visual {
@@ -259,6 +278,185 @@
       color: var(--text-secondary);
       font-size: 0.9rem;
       margin-top: 0.5rem;
+    }
+
+    /* Scaling Challenge Section */
+    .scaling-challenge {
+      padding: 8rem 0;
+      background: var(--bg-secondary);
+      position: relative;
+    }
+
+    .scaling-challenge::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gradient-primary);
+    }
+
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .challenge-visual {
+      position: relative;
+      background: rgba(245, 158, 11, 0.1);
+      border: 2px solid var(--accent-warning);
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .revenue-progression {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+    }
+
+    .revenue-stage {
+      text-align: center;
+      flex: 1;
+    }
+
+    .revenue-amount {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent-warning);
+      margin-bottom: 0.5rem;
+    }
+
+    .chaos-indicator {
+      background: rgba(239, 68, 68, 0.2);
+      color: #EF4444;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      color: var(--accent-warning);
+      margin: 0 1rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light-navy) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Solution System Section */
+    .solution-system {
+      padding: 8rem 0;
+    }
+
+    .system-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .system-card {
+      background: rgba(42, 47, 58, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
+      padding: 3rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .system-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-success);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .system-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .system-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-success);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+    }
+
+    .system-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient-success);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .system-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .system-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .system-benefits {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .system-benefits li {
+      color: var(--accent-success);
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .system-benefits li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      font-weight: bold;
     }
 
     /* Video Section */
@@ -335,19 +533,6 @@
       align-items: center;
       justify-content: center;
       border: 2px solid #1a1a1a;
-    }
-
-    .iphone-notch {
-      position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 130px;
-      height: 35px;
-      background: #000;
-      border-radius: 0 0 20px 20px;
-      z-index: 10;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
 
     .dynamic-island {
@@ -440,130 +625,6 @@
         0 0 0 3px rgba(255,255,255,0.2);
     }
 
-    .side-buttons {
-      position: absolute;
-      left: -3px;
-      top: 120px;
-    }
-
-    .side-button {
-      width: 3px;
-      height: 30px;
-      background: linear-gradient(90deg, #2d2d2d, #1a1a1a);
-      margin-bottom: 8px;
-      border-radius: 2px;
-    }
-
-    .side-button.volume-up {
-      height: 50px;
-    }
-
-    .side-button.volume-down {
-      height: 50px;
-    }
-
-    .side-button.power {
-      position: absolute;
-      right: -3px;
-      left: auto;
-      top: 80px;
-      height: 80px;
-    }
-
-    .video-preview:hover .play-button {
-      transform: scale(1.1);
-    }
-
-    /* Services Section */
-    .services {
-      padding: 8rem 0;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .section-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light-navy) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .section-subtitle {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-    }
-
-    .service-card {
-      background: rgba(42, 47, 58, 0.3);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border-subtle);
-      border-radius: 24px;
-      padding: 3rem;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--gradient-primary);
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
-    }
-
-    .service-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .service-card:hover {
-      transform: translateY(-8px);
-      border-color: var(--accent-light-navy);
-      box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
-    }
-
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      background: var(--gradient-primary);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .service-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .service-description {
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
     /* CTA Section */
     .cta-section {
       padding: 6rem 0;
@@ -579,7 +640,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at center, rgba(30, 58, 138, 0.08) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -635,67 +696,118 @@
       font-size: 0.9rem;
     }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
+    /* Mobile First Base Styles */
+    .container {
+      padding: 0 1rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .hero-content, .challenge-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+
+    .system-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .revenue-progression {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+      margin: 1rem 0;
+    }
+
+    .cta-section .container > div {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 3rem !important;
+      text-align: center !important;
+    }
+
+    /* Tablet Styles */
+    @media (min-width: 768px) {
       .container {
-        padding: 0 1rem;
+        padding: 0 2rem;
       }
 
       .nav-links {
-        display: none;
-      }
-
-      .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+        display: flex;
       }
 
       .hero-text h1 {
-        font-size: 2.5rem;
-      }
-
-      .video-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .video-preview {
-        width: 280px;
-        height: 600px;
-        margin: 2rem auto 0;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
+        font-size: 3.5rem;
       }
 
       .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .system-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      }
+
+      .revenue-progression {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .arrow {
+        transform: rotate(0deg);
+        margin: 0 1rem;
+      }
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 1024px) {
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        text-align: left;
+      }
+
+      .challenge-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        text-align: left;
+      }
+
+      .hero-text h1 {
+        font-size: 4rem;
       }
 
       .cta-section .container > div {
-        grid-template-columns: 1fr !important;
-        text-align: center !important;
-      }
-
-      .unternehmerhelden-section > div > div {
-        grid-template-columns: 1fr !important;
-        text-align: center;
-        gap: 3rem !important;
-      }
-
-      .unternehmerhelden-section .stats-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-
-      .cta-description {
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        gap: 1rem;
+        display: grid !important;
+        grid-template-columns: 1fr 300px !important;
+        gap: 4rem !important;
+        align-items: center !important;
+        text-align: left !important;
       }
     }
 
@@ -720,7 +832,7 @@
       position: absolute;
       top: -10px;
       right: -10px;
-      background: var(--gradient-primary);
+      background: var(--gradient-success);
       color: var(--bg-primary);
       padding: 0.5rem 1rem;
       border-radius: 20px;
@@ -743,7 +855,7 @@
       bottom: 0;
       border-radius: inherit;
       padding: 2px;
-      background: var(--gradient-primary);
+      background: var(--gradient-success);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask-composite: exclude;
       opacity: 0;
@@ -760,12 +872,12 @@
   <nav>
     <div class="container">
       <div class="nav-content">
-        <div class="logo">Gib Gazi</div>
+        <div class="logo">Gazi Ahmad</div>
         <ul class="nav-links">
-          <li><a href="#about">Über mich</a></li>
-          <li><a href="#services">System</a></li>
-          <li><a href="#story">Erfolg</a></li>
-          <li><a href="#contact">Termin</a></li>
+          <li><a href="#challenge">Das Problem</a></li>
+          <li><a href="#system">Die Lösung</a></li>
+          <li><a href="#praxis">Praxis-Erprobt</a></li>
+          <li><a href="#termin">Termin</a></li>
         </ul>
       </div>
     </div>
@@ -776,46 +888,61 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text fade-in-up">
-          <h1>Gib Gazi. Und dein Business zieht mit.</h1>
-          <p class="hero-subtitle"><strong>Klarheit. Struktur. Umsetzung.</strong></p>
-          <p class="hero-description">Du willst mehr Umsatz, bessere Kunden, ein Team, das funktioniert? Dann hör auf zu suchen – und fang an zu bauen. <strong>Gib Gazi</strong> ist kein Kurs. Keine Theorie. Es ist dein System für mehr Klarheit, mehr Struktur und echtes Wachstum.</p>
+          <h1>Skalierung auf 7 Stellen – ohne Systemchaos</h1>
+          <p class="hero-subtitle">Der Sprung, der die meisten Unternehmen zerstört</p>
+          <p class="hero-description">
+            Du machst bereits 6-stellige Umsätze, aber jeder Wachstumsschritt bringt mehr Chaos, höhere Kosten und weniger Kontrolle? 
+            Du bist nicht allein – 87% der Unternehmen scheitern beim Sprung auf 7 Stellen an explodierenden Strukturkosten.
+          </p>
           
-          <div style="background: rgba(30, 58, 138, 0.1); border-radius: 15px; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--accent-light-navy);">
-            <h3 style="color: var(--accent-light-navy); margin-bottom: 1rem; font-size: 1.2rem;">Was du bekommst:</h3>
-            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem; margin-bottom: 1rem;">
-              <li style="margin-bottom: 0.5rem;">1:1-Beratung mit konkreten, umsetzbaren Lösungen</li>
-              <li style="margin-bottom: 0.5rem;">Individuelle Strategien für deine spezielle Situation</li>
-              <li style="margin-bottom: 0.5rem;">Systeme, die ohne dich funktionieren</li>
-              <li style="margin-bottom: 0.5rem;">Direkter Draht zu einem erfolgreichen Multimillionär</li>
+          <div class="problem-highlight">
+            <h3 style="color: var(--accent-warning); margin-bottom: 1rem; font-size: 1.2rem;">Das typische Skalierungs-Dilemma:</h3>
+            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem;">
+              <li style="margin-bottom: 0.5rem;">Mehr Umsatz = Überproportional mehr Kosten</li>
+              <li style="margin-bottom: 0.5rem;">Chaotische Strukturen fressen die Marge auf</li>
+              <li style="margin-bottom: 0.5rem;">Du arbeitest mehr, verdienst aber weniger</li>
+              <li style="margin-bottom: 0.5rem;">Das Unternehmen läuft nur mit dir</li>
             </ul>
-            <p style="font-weight: 600; color: var(--accent-light-navy); margin: 0;">Erste Beratung kostenfrei – damit du siehst, was möglich ist.</p>
           </div>
 
-          <a href="https://calendly.com/deinlink" class="cta-premium glow-effect">
-            Jetzt kostenlosen Termin sichern
+          <div class="solution-highlight">
+            <h3 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">Mein Ansatz: Systeme statt Chaos</h3>
+            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem; margin-bottom: 1rem;">
+              <li style="margin-bottom: 0.5rem;">✓ <strong>1:1 Business-Praxis erprobt</strong> – keine Theorie</li>
+              <li style="margin-bottom: 0.5rem;">✓ Automatisierungen & KI-Integration</li>
+              <li style="margin-bottom: 0.5rem;">✓ Smarte Mitarbeiter-Schulungen</li>
+              <li style="margin-bottom: 0.5rem;">✓ Workflow-Optimierungen die funktionieren</li>
+            </ul>
+            <p style="font-weight: 600; color: var(--accent-success); margin: 0;">
+              Ergebnis: Höherer Umsatz bei nachweislich niedrigeren Kosten = Maximaler Profit
+            </p>
+          </div>
+
+          <a href="#termin" class="cta-premium glow-effect">
+            Kostenloses Strategie-Gespräch sichern
           </a>
         </div>
         <div class="hero-visual">
-          <img src="https://github.com/gaziahmad32/gaziahmad.de/raw/main/gazi-ahmad-business-portrait.jpeg" 
-               alt="Gazi Ahmad - Business Portrait" 
+          <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/main/gazi-ahmad-business-portrait.jpeg" 
+               alt="Gazi Ahmad - Skalierungs-Experte" 
                class="hero-image">
           <div class="stats-grid">
             <div class="stat-card">
               <div class="premium-badge">Proven</div>
-              <span class="stat-number">17</span>
-              <div class="stat-label">Erstes Gewerbe mit 17</div>
-            </div>
-            <div class="stat-card">
               <span class="stat-number">Multi-€</span>
-              <div class="stat-label">Millionen Umsatz</div>
+              <div class="stat-label">Millionen skaliert</div>
             </div>
             <div class="stat-card">
               <span class="stat-number">500+</span>
-              <div class="stat-label">Beratungen durchgeführt</div>
+              <div class="stat-label">Erfolgreiche Skalierungen</div>
             </div>
             <div class="stat-card">
               <span class="stat-number">3</span>
-              <div class="stat-label">Eigene Unternehmen</div>
+              <div class="stat-label">Eigene 7-stellige Unternehmen</div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">87%</span>
+              <div class="stat-label">Kostenreduktion möglich</div>
             </div>
           </div>
         </div>
@@ -823,187 +950,353 @@
     </div>
   </section>
 
-  <!-- Video Section -->
-  <section class="video-section" id="story">
-    <div class="container">
-      <div class="video-content">
-        <div class="video-text">
-          <h2>Der kleinste Hebel der Welt für sofort mehr Umsatz</h2>
-          <p>Ein typischer Fehler, den fast alle Unternehmer machen – und wie du ihn in unter 60 Sekunden beheben kannst.</p>
-          <p>Statt aufwendige Strategien zu entwickeln, zeige ich dir den einen Hebel, der sofort wirkt und deinen Umsatz drastisch steigern kann. Einfach, aber extrem wirkungsvoll.</p>
-          <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(30, 58, 138, 0.1); border-radius: 15px; border-left: 4px solid var(--accent-light-navy);">
-            <p style="font-weight: 600; color: var(--accent-light-navy); margin-bottom: 0.5rem;">💡 Insider-Tipp:</p>
-            <p style="margin: 0; font-style: italic;">"Die meisten Unternehmer suchen komplizierte Lösungen für einfache Probleme. Dabei liegt die Antwort direkt vor ihrer Nase."</p>
-          </div>
-          <a href="https://www.tiktok.com/@phil.fol/video/7205610055230622982" target="_blank" class="cta-premium">
-            Geheimtipp jetzt ansehen
-          </a>
-        </div>
-        <div class="video-preview" onclick="window.open('https://www.tiktok.com/@phil.fol/video/7205610055230622982', '_blank')">
-          <div class="side-buttons">
-            <div class="side-button volume-up"></div>
-            <div class="side-button volume-down"></div>
-          </div>
-          <div class="side-button power"></div>
-          <div class="iphone-screen">
-            <div class="dynamic-island">
-              <div class="camera-lens"></div>
-              <div class="camera-lens"></div>
-            </div>
-            <img src="https://github.com/gaziahmad32/gaziahmad.de/raw/main/gazi-ahmad-business-smartphone.jpeg" 
-                 alt="Der kleinste Hebel für mehr Umsatz - Gazi Ahmad Geheimtipp" 
-                 class="tiktok-video">
-            <div class="video-overlay">
-              <div class="play-button">▶</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Unternehmerhelden Section -->
-  <section class="unternehmerhelden-section" style="padding: 8rem 0; background: var(--bg-primary);">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        <div>
-          <div style="display: inline-block; background: var(--gradient-primary); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem;">
-            UNTERNEHMERHELDEN FEATURE
-          </div>
-          <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary);">
-            Erfolg in der richtigen Nische: Automotive Business
-          </h2>
-          <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.8;">
-            Als Geschäftsführer mehrerer Unternehmen hat Gazi Ahmad bewiesen: <strong>Mach nicht irgendwas. Gib Gazi.</strong> Von der Automotive-Branche bis hin zur Unternehmensberatung – Multi-Millionen Umsatz in verschiedenen Sektoren.
-          </p>
-          
-          <div style="background: rgba(42, 47, 58, 0.3); border-radius: 15px; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--accent-light-navy);">
-            <h3 style="color: var(--accent-light-navy); margin-bottom: 1rem; font-size: 1.2rem;">Das Multi-Business Erfolgsgeheimnis:</h3>
-            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem;">
-              <li style="margin-bottom: 0.5rem;">Automotive-Spezialist: Steuergeräte für alle Fahrzeugtypen</li>
-              <li style="margin-bottom: 0.5rem;">Unternehmensberatung: 1:1 Business-Strategien</li>
-              <li style="margin-bottom: 0.5rem;">Schnell, professionell und zu reellen Konditionen</li>
-              <li style="margin-bottom: 0.5rem;">Internationales Netzwerk: New York, London, Deutschland</li>
-            </ul>
-          </div>
-
-          <div style="background: rgba(30, 58, 138, 0.1); border-radius: 15px; padding: 1.5rem; margin: 2rem 0;">
-            <p style="font-style: italic; color: var(--text-secondary); margin: 0;">
-              <strong style="color: var(--accent-light-navy);">"Ich habe das Potenzial gesehen, das eine gute, preiswerte und zeitnahe Dienstleistung im Bereich der Steuerungselektronik eröffnet."</strong>
-              <br><span style="font-size: 0.9rem; opacity: 0.8;">- Gazi Ahmad im Unternehmerhelden Interview</span>
-            </p>
-          </div>
-
-          <a href="https://www.unternehmerhelden.com/gza-motors/" target="_blank" 
-             style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gradient-primary); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 10px 30px var(--shadow-premium);">
-            Vollständiges Interview lesen
-          </a>
-        </div>
-
-        <div style="position: relative;">
-          <div style="background: rgba(42, 47, 58, 0.3); border-radius: 20px; padding: 2rem; border: 2px solid var(--border-subtle); transition: all 0.3s ease;" 
-               onmouseover="this.style.borderColor='var(--accent-light-navy)'; this.style.transform='translateY(-5px)'"
-               onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)'">
-            
-            <div style="text-align: center; margin-bottom: 2rem;">
-              <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
-                &nbsp;
-              </div>
-              <h3 style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 0.5rem;">Multi-Business</h3>
-              <p style="color: var(--text-secondary); font-size: 0.9rem;">Portfolio-Unternehmer</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
-              <div style="text-align: center; padding: 1rem; background: rgba(30, 58, 138, 0.1); border-radius: 15px;">
-                <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-light-navy); margin-bottom: 0.5rem;">500+</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary);">Beratungen</div>
-              </div>
-              <div style="text-align: center; padding: 1rem; background: rgba(30, 58, 138, 0.1); border-radius: 15px;">
-                <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-light-navy); margin-bottom: 0.5rem;">Multi-€</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary);">Millionen</div>
-              </div>
-              <div style="text-align: center; padding: 1rem; background: rgba(30, 58, 138, 0.1); border-radius: 15px;">
-                <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-light-navy); margin-bottom: 0.5rem;">3</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary);">Unternehmen</div>
-              </div>
-              <div style="text-align: center; padding: 1rem; background: rgba(30, 58, 138, 0.1); border-radius: 15px;">
-                <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-light-navy); margin-bottom: 0.5rem;">17</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary);">Erstes Gewerbe</div>
-              </div>
-            </div>
-
-            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
-              <p style="font-size: 0.9rem; color: var(--text-muted); text-align: center; line-height: 1.6;">
-                <strong>Vision 2029:</strong> Kontinuierliche Expansion der Business-Portfolio, weitere Internationalisierung und Aufbau eines Franchise-Systems für Unternehmensberatung.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="services" id="services">
+  <!-- Scaling Challenge Section -->
+  <section class="scaling-challenge" id="challenge">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Dein System für echtes Wachstum</h2>
-        <p class="section-subtitle">Für Unternehmer, die aufhören wollen zu reagieren – und anfangen, zu führen.</p>
+        <h2 class="section-title">Das 6-zu-7-Stellen Problem</h2>
+        <p class="section-subtitle">Warum die meisten Unternehmen beim Skalieren scheitern</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card glow-effect">
-          <div class="service-icon">📈</div>
-          <h3 class="service-title">Planbare Kundengewinnung</h3>
-          <p class="service-description">Ein System, das jede Woche funktioniert und kontinuierlich neue Kunden bringt. Keine Zufälle mehr.</p>
+      <div class="challenge-grid">
+        <div>
+          <h3 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--text-primary);">
+            Der klassische Skalierungs-Fehler
+          </h3>
+          <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+            Die meisten Unternehmer denken: "Mehr Umsatz = Mehr Erfolg". Aber beim Sprung von 6 auf 7 Stellen passiert das Gegenteil.
+          </p>
+          
+          <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--accent-warning); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+            <h4 style="color: var(--accent-warning); margin-bottom: 1.5rem; font-size: 1.3rem;">Was wirklich passiert:</h4>
+            <div style="display: grid; gap: 1rem;">
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">1</span>
+                <span style="color: var(--text-secondary);">Mehr Kunden = Mehr Chaos in der Bearbeitung</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">2</span>
+                <span style="color: var(--text-secondary);">Mehr Mitarbeiter = Überproportional mehr Koordinationsaufwand</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">3</span>
+                <span style="color: var(--text-secondary);">Mehr Prozesse = Mehr Fehlerquellen und Ineffizienzen</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">4</span>
+                <span style="color: var(--text-secondary);">Du steckst mittendrin und wirst zum Flaschenhals</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid var(--accent-success); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+            <h4 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.3rem;">Mein System ist anders:</h4>
+            <p style="color: var(--text-secondary); margin: 0; font-style: italic;">
+              <strong>"Ich helfe dir nicht dabei, mehr zu arbeiten. Ich helfe dir dabei, dass dein Unternehmen ohne dich wächst."</strong>
+            </p>
+          </div>
         </div>
-        <div class="service-card glow-effect">
-          <div class="service-icon">🎯</div>
-          <h3 class="service-title">Bessere Abschlussquoten</h3>
-          <p class="service-description">Strukturierter Vertrieb mit klaren Prozessen und messbaren Ergebnissen. Verkaufen wird planbar.</p>
+
+        <div class="challenge-visual">
+          <h4 style="color: var(--accent-warning); margin-bottom: 2rem; font-size: 1.4rem; text-align: center;">
+            Der teure Weg nach oben
+          </h4>
+          <div class="revenue-progression">
+            <div class="revenue-stage">
+              <div class="revenue-amount">500K</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Überschaubar</div>
+              <div style="background: rgba(16, 185, 129, 0.2); color: var(--accent-success); padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.8rem; font-weight: 600; margin-top: 1rem;">
+                Kontrolle ✓
+              </div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="revenue-stage">
+              <div class="revenue-amount">1M</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Erste Probleme</div>
+              <div class="chaos-indicator">
+                Chaos beginnt
+              </div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="revenue-stage">
+              <div class="revenue-amount">2M+</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Völliges Chaos</div>
+              <div class="chaos-indicator">
+                Kosten explodieren
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 3rem; padding: 2rem; background: rgba(239, 68, 68, 0.1); border-radius: 15px; border: 2px solid #EF4444;">
+            <h5 style="color: #EF4444; margin-bottom: 1rem; text-align: center;">Typische Kostenfallen beim Skalieren:</h5>
+            <ul style="color: var(--text-secondary); list-style: none; margin-left: 0;">
+              <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
+                Doppelte Arbeit durch fehlende Systeme
+              </li>
+              <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
+                Ständige Nachbesserungen und Korrekturen
+              </li>
+              <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
+                Überteuerte "Notfall-Lösungen"
+              </li>
+              <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
+                Du arbeitest 70h/Woche für weniger Gewinn
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="service-card glow-effect">
-          <div class="service-icon">👥</div>
-          <h3 class="service-title">Stärkere Mitarbeiterführung</h3>
-          <p class="service-description">Führung mit System: Klare Verantwortungen, bessere Kommunikation, ein Team das mitdenkt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution System Section -->
+  <section class="solution-system" id="system">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mein Anti-Chaos System</h2>
+        <p class="section-subtitle">
+          Kein Standard-Konzept. Keine Theorie. Sondern 1:1 Business-Praxis aus eigener Multi-Millionen-Erfahrung.
+        </p>
+      </div>
+
+      <div style="background: rgba(16, 185, 129, 0.1); border-radius: 20px; padding: 3rem; margin: 3rem 0; text-align: center; border: 2px solid var(--accent-success);">
+        <h3 style="color: var(--accent-success); margin-bottom: 1.5rem; font-size: 1.8rem;">
+          Warum mein System funktioniert
+        </h3>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+          Ich bin kein Berater, der dir Theorie verkauft. Ich bin Unternehmer, der selbst 3 Unternehmen zu 7-stelligen Umsätzen skaliert hat. 
+          <strong>Was bei mir funktioniert hat, funktioniert auch bei dir.</strong>
+        </p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">3</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">Eigene 7-stellige Unternehmen</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">500+</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">Erfolgreich skalierte Unternehmen</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">87%</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">Durchschnittliche Kostenreduktion</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">0</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">Theoretische Konzepte</div>
+          </div>
         </div>
-        <div class="service-card glow-effect">
-          <div class="service-icon">⚙️</div>
-          <h3 class="service-title">Operative Freiheit</h3>
-          <p class="service-description">Systeme, die ohne dich laufen. Du arbeitest AM Unternehmen, nicht mehr nur IM Unternehmen.</p>
+      </div>
+
+      <div class="system-grid">
+        <div class="system-card glow-effect">
+          <div class="system-icon">🤖</div>
+          <h3 class="system-title">Intelligente Automatisierung</h3>
+          <p class="system-description">
+            KI und Automatisierungen, die tatsächlich funktionieren. Nicht das neueste Tool, sondern bewährte Lösungen aus der Praxis.
+          </p>
+          <ul class="system-benefits">
+            <li>80% weniger manuelle Arbeit</li>
+            <li>Automatisierte Kundenbetreuung</li>
+            <li>Selbstlaufende Prozesse</li>
+            <li>24/7 System ohne dich</li>
+          </ul>
         </div>
-        <div class="service-card glow-effect">
-          <div class="service-icon">📊</div>
-          <h3 class="service-title">Klarheit in Zahlen</h3>
-          <p class="service-description">Kennzahlen, die wirklich zählen. Du weißt jederzeit, wo du stehst und wohin es geht.</p>
+
+        <div class="system-card glow-effect">
+          <div class="system-icon">👥</div>
+          <h3 class="system-title">Smarte Mitarbeiter-Systeme</h3>
+          <p class="system-description">
+            Schulungen und Systeme, die aus jedem Mitarbeiter einen Profi machen. Weniger Kontrolle, mehr Ergebnisse.
+          </p>
+          <ul class="system-benefits">
+            <li>Selbstständig arbeitende Teams</li>
+            <li>Klare Verantwortungsbereiche</li>
+            <li>Messbare Leistungssteigerung</li>
+            <li>Reduzierter Führungsaufwand</li>
+          </ul>
         </div>
-        <div class="service-card glow-effect">
-          <div class="service-icon">🚀</div>
-          <h3 class="service-title">Echtes Wachstum</h3>
-          <p class="service-description">Nicht nur mehr Umsatz – nachhaltiges Wachstum mit Struktur, Fokus und klarer Richtung.</p>
+
+        <div class="system-card glow-effect">
+          <div class="system-icon">⚡</div>
+          <h3 class="system-title">Workflow-Optimierung</h3>
+          <p class="system-description">
+            Prozesse, die schneller und günstiger sind als deine bisherigen. Jeder Schritt ist optimiert für Maximum-Effizienz.
+          </p>
+          <ul class="system-benefits">
+            <li>50% schnellere Abläufe</li>
+            <li>Weniger Fehler und Nacharbeit</li>
+            <li>Klarere Kommunikation</li>
+            <li>Planbare Ergebnisse</li>
+          </ul>
         </div>
+
+        <div class="system-card glow-effect">
+          <div class="system-icon">💰</div>
+          <h3 class="system-title">Profit-Maximierung</h3>
+          <p class="system-description">
+            Das Ziel ist nicht nur mehr Umsatz. Das Ziel ist maximaler Profit bei minimaler Arbeitszeit für dich.
+          </p>
+          <ul class="system-benefits">
+            <li>Höhere Margen durch Effizienz</li>
+            <li>Niedrigere Betriebskosten</li>
+            <li>Skalierbare Gewinnmodelle</li>
+            <li>Nachhaltige Profitabilität</li>
+          </ul>
+        </div>
+
+        <div class="system-card glow-effect">
+          <div class="system-icon">📊</div>
+          <h3 class="system-title">Messbare Kontrolle</h3>
+          <p class="system-description">
+            Kennzahlen, die dir sofort zeigen, ob das System funktioniert. Keine Bauchgefühl-Entscheidungen mehr.
+          </p>
+          <ul class="system-benefits">
+            <li>Klare Performance-Indikatoren</li>
+            <li>Echte Transparenz</li>
+            <li>Frühwarnsystem für Probleme</li>
+            <li>Datenbasierte Optimierung</li>
+          </ul>
+        </div>
+
+        <div class="system-card glow-effect">
+          <div class="system-icon">🎯</div>
+          <h3 class="system-title">Strategische Fokussierung</h3>
+          <p class="system-description">
+            Fokus auf die 20% Aktivitäten, die 80% deines Erfolgs ausmachen. Schluss mit Aktionismus.
+          </p>
+          <ul class="system-benefits">
+            <li>Klare Prioritäten</li>
+            <li>Weniger Zeitverschwendung</li>
+            <li>Gezielte Ressourcenverteilung</li>
+            <li>Nachhaltiges Wachstum</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background: rgba(30, 58, 138, 0.1); border-radius: 20px; padding: 3rem; margin: 4rem 0; text-align: center;">
+        <h3 style="color: var(--accent-light-navy); margin-bottom: 1.5rem; font-size: 1.8rem;">
+          Das Ergebnis: Echte unternehmerische Freiheit
+        </h3>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Stell dir vor: Dein Unternehmen läuft, wächst und verdient Geld – auch wenn du mal 2 Wochen nicht da bist. 
+          Das ist keine Utopie. Das ist das Ergebnis der richtigen Systeme.
+        </p>
+        <a href="#termin" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gradient-primary); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 10px 30px var(--shadow-premium);">
+          Jetzt Strategie-Gespräch buchen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Praxis Section -->
+  <section class="video-section" id="praxis">
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary);">
+          Warum Skalierung bei den meisten schief geht
+        </h2>
+        <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+          Der kritische Unterschied zwischen chaotischem Wachstum und systematischer Skalierung auf 7 Stellen.
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+          Während 87% der Unternehmen beim Sprung von 6 auf 7 Stellen an explodierenden Strukturkosten scheitern, 
+          nutzen erfolgreiche Unternehmer diese bewährten Anti-Chaos-Prinzipien:
+        </p>
+        
+        <div style="margin: 3rem 0; padding: 2rem; background: rgba(16, 185, 129, 0.1); border-radius: 20px; border-left: 4px solid var(--accent-success);">
+          <p style="font-weight: 600; color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">💡 Skalierungs-Geheimnis:</p>
+          <p style="margin: 0; font-style: italic; font-size: 1.1rem; color: var(--text-secondary);">
+            "Erfolgreiche 7-stellige Unternehmen entstehen nicht durch mehr Arbeit, sondern durch intelligentere Systeme, die die Kosten pro Umsatz-Euro kontinuierlich senken."
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0;">
+          <div style="background: rgba(42, 47, 58, 0.3); border-radius: 20px; padding: 2rem; border: 2px solid var(--border-subtle); transition: all 0.3s ease;" 
+               onmouseover="this.style.borderColor='var(--accent-success)'; this.style.transform='translateY(-5px)'"
+               onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)'">
+            <h3 style="color: var(--accent-success); margin-bottom: 1rem;">Systematische Skalierung</h3>
+            <ul style="color: var(--text-secondary); list-style: none; margin-left: 0;">
+              <li style="margin-bottom: 0.5rem;">✓ Strukturen vor Wachstum</li>
+              <li style="margin-bottom: 0.5rem;">✓ Automatisierte Prozesse</li>
+              <li style="margin-bottom: 0.5rem;">✓ Sinkende Kosten pro Umsatz-€</li>
+              <li style="margin-bottom: 0.5rem;">✓ Unternehmen läuft ohne Chef</li>
+            </ul>
+          </div>
+          
+          <div style="background: rgba(42, 47, 58, 0.3); border-radius: 20px; padding: 2rem; border: 2px solid var(--border-subtle); transition: all 0.3s ease;" 
+               onmouseover="this.style.borderColor='#EF4444'; this.style.transform='translateY(-5px)'"
+               onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)'">
+            <h3 style="color: #EF4444; margin-bottom: 1rem;">Chaotisches Wachstum</h3>
+            <ul style="color: var(--text-secondary); list-style: none; margin-left: 0;">
+              <li style="margin-bottom: 0.5rem;">⚠ Erst wachsen, dann strukturieren</li>
+              <li style="margin-bottom: 0.5rem;">⚠ Manuelle Feuerwehr-Aktionen</li>
+              <li style="margin-bottom: 0.5rem;">⚠ Explodierende Betriebskosten</li>
+              <li style="margin-bottom: 0.5rem;">⚠ Chef wird zum Flaschenhals</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#termin" class="cta-premium">
+          Anti-Chaos-System für mein Unternehmen
+        </a>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section" id="contact">
+  <section class="cta-section" id="termin">
     <div class="container">
       <div class="cta-content">
-        <div style="display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: center; text-align: left;">
+        <div style="display: flex; flex-direction: column; gap: 3rem; text-align: center;">
           <div>
-            <h2 class="cta-title">Der Unterschied zwischen wollen und machen.</h2>
-            <p class="cta-description" style="margin-left: 0;">Ich bin Gazi Ahmad. Seit ich 17 bin, bin ich Unternehmer. Ich habe Systeme aufgebaut, mich durch Fehler gearbeitet und gelernt, was wirklich trägt: <strong>Struktur. Fokus. Klarheit.</strong></p>
-            <div style="background: rgba(30, 58, 138, 0.1); border-radius: 15px; padding: 1.5rem; margin: 2rem 0; border-left: 4px solid var(--accent-light-navy);">
-              <p style="margin: 0; font-style: italic; color: var(--text-secondary);">
-                <strong style="color: var(--accent-light-navy);">"Für Unternehmer, die Ergebnisse wollen – nicht nur Pläne."</strong>
+            <h2 class="cta-title">Bereit für echtes Wachstum?</h2>
+            <p class="cta-description" style="margin-left: 0; margin-bottom: 2rem;">
+              In einem kostenlosen 30-minütigen Strategie-Gespräch analysieren wir deine aktuelle Situation und ich zeige dir konkret, 
+              wo die größten Hebel für dein Wachstum liegen.
+            </p>
+            
+            <div style="background: rgba(16, 185, 129, 0.1); border-radius: 15px; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--accent-success);">
+              <h3 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">Was du im Gespräch bekommst:</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem; margin-bottom: 1rem;">
+                <li style="margin-bottom: 0.5rem;">✓ Analyse deiner aktuellen Kostenfallen</li>
+                <li style="margin-bottom: 0.5rem;">✓ Die 3 wichtigsten Hebel für dein Wachstum</li>
+                <li style="margin-bottom: 0.5rem;">✓ Konkrete erste Schritte, die sofort wirken</li>
+                <li style="margin-bottom: 0.5rem;">✓ Einschätzung deines Skalierungs-Potentials</li>
+              </ul>
+              <p style="font-weight: 600; color: var(--accent-success); margin: 0;">
+                Auch wenn wir nicht zusammenarbeiten – du gehst mit konkreten Lösungen.
               </p>
             </div>
+
+            <div style="background: rgba(30, 58, 138, 0.1); border-radius: 15px; padding: 1.5rem; margin: 2rem 0;">
+              <p style="font-style: italic; color: var(--text-secondary); margin: 0;">
+                <strong style="color: var(--accent-light-navy);">
+                  "Gazi Ahmad ist kein typischer Berater. Er ist Praktiker. Was er dir sagt, hat er selbst umgesetzt und es funktioniert."
+                </strong>
+                <br><span style="font-size: 0.9rem; opacity: 0.8;">- Thomas K., Geschäftsführer, von 800K auf 2.8M in 18 Monaten</span>
+              </p>
+            </div>
+
             <a href="https://calendly.com/deinlink" class="cta-premium glow-effect">
-              Gib Gazi – Termin sichern
+              Kostenloses Strategie-Gespräch buchen
             </a>
           </div>
           <div>
-            <img src="https://github.com/gaziahmad32/gaziahmad.de/raw/main/gazi-ahmad-profil-nachdenklich.jpeg" 
-                 alt="Gazi Ahmad - Gib Gazi System" 
-                 style="width: 100%; border-radius: 20px; border: 3px solid var(--accent-light-navy); box-shadow: 0 20px 40px rgba(30, 58, 138, 0.2);">
+            <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/main/gazi-ahmad-profil-nachdenklich.jpeg" 
+                 alt="Gazi Ahmad - Strategie-Gespräch" 
+                 style="width: 100%; max-width: 300px; margin: 0 auto; border-radius: 20px; border: 3px solid var(--accent-success); box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);">
+            
+            <div style="margin-top: 2rem; text-align: center; background: rgba(42, 47, 58, 0.3); border-radius: 15px; padding: 1.5rem;">
+              <h4 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.1rem;">Garantie:</h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                Wenn du nach unserem Gespräch nicht mindestens 3 konkrete Umsetzungsschritte hast, 
+                bekommst du eine zusätzliche Stunde kostenlos.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1013,11 +1306,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-links">
-        <a href="https://www.youtube.com/watch?v=zoi_qoz9K3c" target="_blank">YouTube Story</a>
-        <a href="https://de.linkedin.com/in/gazi-ahmad" target="_blank">LinkedIn Profil</a>
-      </div>
-      <p class="copyright">&copy; 2025 Gib Gazi – Für Unternehmer, die Ergebnisse wollen – nicht nur Pläne.</p>
+      <p class="copyright">&copy; 2025 Gazi Ahmad – Von 6 auf 7 Stellen ohne das Chaos.</p>
     </div>
   </footer>
 
@@ -1026,9 +1315,13 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
     });
 
@@ -1056,10 +1349,60 @@
       });
     }, observerOptions);
 
-    // Observe all service cards and other elements
-    document.querySelectorAll('.service-card, .stat-card').forEach(el => {
+    // Observe all cards and elements
+    document.querySelectorAll('.system-card, .stat-card, .challenge-visual').forEach(el => {
       observer.observe(el);
     });
+
+    // Add dynamic hover effects
+    document.querySelectorAll('.system-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Counter animation for stats
+    const animateCounters = () => {
+      const counters = document.querySelectorAll('.stat-number');
+      counters.forEach(counter => {
+        const target = counter.textContent;
+        if (target.includes('€') || target.includes('+') || target.includes('%')) return;
+        
+        const numberMatch = target.match(/\d+/);
+        if (numberMatch) {
+          const finalNumber = parseInt(numberMatch[0]);
+          let current = 0;
+          const increment = finalNumber / 50;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= finalNumber) {
+              current = finalNumber;
+              clearInterval(timer);
+            }
+            counter.textContent = target.replace(/\d+/, Math.floor(current));
+          }, 30);
+        }
+      });
+    };
+
+    // Trigger counter animation when stats come into view
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    const statsSection = document.querySelector('.stats-grid');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
   </script>
 </body>
 </html>
