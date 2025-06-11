@@ -2,896 +2,28 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gazi Ahmad – Von 999.999€ auf über 1.000.000€ ohne Chaos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0A0E1A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Gazi Ahmad - Die Lösung für Ihr Wachstum</title>
   <meta name="description" content="Gazi Ahmad hilft Unternehmern beim Sprung von 999.999€ auf über 1.000.000€ - mit weniger Chaos, niedrigeren Kosten und maximiertem Profit durch bewährte 1:1 Praxis-Systeme.">
   <meta name="keywords" content="Gazi Ahmad, Skalierung, 7-stelliger Umsatz, Kostenreduktion, Automatisierung, KI, Workflow-Optimierung, Business-Praxis, Profit-Maximierung">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-primary: #0A0E1A;
-      --bg-secondary: #1A1F2E;
-      --bg-accent: #2A3142;
-      --text-primary: #FFFFFF;
-      --text-secondary: #B8BCC8;
-      --text-muted: #6B7280;
-      --accent-navy: #1E3A8A;
-      --accent-silver: #C0C7D1;
-      --accent-light-navy: #3B82F6;
-      --accent-success: #10B981;
-      --accent-warning: #F59E0B;
-      --border-subtle: #2A3142;
-      --shadow-premium: rgba(30, 58, 138, 0.2);
-      --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
-      --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
-      --gradient-secondary: linear-gradient(135deg, #C0C7D1 0%, #E5E7EB 100%);
-      --gradient-bg: linear-gradient(180deg, #0A0E1A 0%, #1A1F2E 100%);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--gradient-bg);
-      color: var(--text-primary);
-      line-height: 1.7;
-      overflow-x: hidden;
-      font-weight: 400;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    /* Premium Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(10, 14, 26, 0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border-subtle);
-      z-index: 1000;
-      padding: 1rem 0;
-    }
-
-    .nav-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      background: var(--gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent-light-navy);
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--gradient-primary);
-      transition: width 0.3s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    /* Hero Section */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-text h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light-navy) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-subtitle {
-      font-size: 1.25rem;
-      color: var(--accent-success);
-      margin-bottom: 2rem;
-      font-weight: 600;
-    }
-
-    .hero-description {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 3rem;
-      line-height: 1.8;
-    }
-
-    .problem-highlight {
-      background: rgba(245, 158, 11, 0.1);
-      border-left: 4px solid var(--accent-warning);
-      padding: 1.5rem;
-      border-radius: 15px;
-      margin: 2rem 0;
-    }
-
-    .solution-highlight {
-      background: rgba(16, 185, 129, 0.1);
-      border-left: 4px solid var(--accent-success);
-      padding: 1.5rem;
-      border-radius: 15px;
-      margin: 2rem 0;
-    }
-
-    .cta-premium {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      background: var(--gradient-success);
-      color: white;
-      padding: 1rem 2.5rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-premium::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-      transition: left 0.5s ease;
-    }
-
-    .cta-premium:hover::before {
-      left: 100%;
-    }
-
-    .cta-premium:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
-    }
-
-    .hero-visual {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      width: 100%;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: 600px;
-      border-radius: 25px;
-      object-fit: cover;
-      border: 4px solid var(--accent-light-navy);
-      box-shadow: 0 25px 50px rgba(30, 58, 138, 0.3);
-      transition: all 0.3s ease;
-    }
-
-    .hero-image:hover {
-      transform: scale(1.02);
-      box-shadow: 0 25px 50px rgba(30, 58, 138, 0.3);
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-    }
-
-    .stat-card {
-      background: rgba(42, 47, 58, 0.5);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border-subtle);
-      border-radius: 20px;
-      padding: 2rem;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--accent-light-navy);
-      box-shadow: 0 10px 30px rgba(30, 58, 138, 0.15);
-    }
-
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: var(--gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      display: block;
-    }
-
-    .stat-label {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-    }
-
-    /* Scaling Challenge Section */
-    .scaling-challenge {
-      padding: 8rem 0;
-      background: var(--bg-secondary);
-      position: relative;
-    }
-
-    .scaling-challenge::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: var(--gradient-primary);
-    }
-
-    .challenge-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .challenge-visual {
-      position: relative;
-      background: rgba(245, 158, 11, 0.1);
-      border: 2px solid var(--accent-warning);
-      border-radius: 20px;
-      padding: 3rem;
-      text-align: center;
-    }
-
-    .revenue-progression {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 2rem 0;
-    }
-
-    .revenue-stage {
-      text-align: center;
-      flex: 1;
-    }
-
-    .revenue-amount {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--accent-warning);
-      margin-bottom: 0.5rem;
-    }
-
-    .chaos-indicator {
-      background: rgba(239, 68, 68, 0.2);
-      color: #EF4444;
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-top: 1rem;
-    }
-
-    .arrow {
-      font-size: 2rem;
-      color: var(--accent-warning);
-      margin: 0 1rem;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .section-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light-navy) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .section-subtitle {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* Solution System Section */
-    .solution-system {
-      padding: 8rem 0;
-    }
-
-    .system-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      margin-top: 4rem;
-    }
-
-    .system-card {
-      background: rgba(42, 47, 58, 0.3);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border-subtle);
-      border-radius: 24px;
-      padding: 3rem;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .system-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--gradient-success);
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
-    }
-
-    .system-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .system-card:hover {
-      transform: translateY(-8px);
-      border-color: var(--accent-success);
-      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
-    }
-
-    .system-icon {
-      width: 60px;
-      height: 60px;
-      background: var(--gradient-success);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .system-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .system-description {
-      color: var(--text-secondary);
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-    }
-
-    .system-benefits {
-      list-style: none;
-      margin-left: 0;
-    }
-
-    .system-benefits li {
-      color: var(--accent-success);
-      margin-bottom: 0.5rem;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
-    .system-benefits li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      font-weight: bold;
-    }
-
-    /* Video Section */
-    .video-section {
-      padding: 8rem 0;
-      background: var(--bg-secondary);
-      position: relative;
-    }
-
-    .video-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: var(--gradient-primary);
-    }
-
-    .video-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .video-text h2 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      color: var(--text-primary);
-    }
-
-    .video-text p {
-      color: var(--text-secondary);
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
-
-    .video-preview {
-      position: relative;
-      width: 320px;
-      height: 680px;
-      margin: 0 auto;
-      background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
-      border-radius: 55px;
-      padding: 8px;
-      box-shadow: 
-        0 0 0 1px #3a3a3a,
-        0 8px 25px rgba(0,0,0,0.3),
-        0 20px 60px rgba(0,0,0,0.4),
-        inset 0 1px 0 rgba(255,255,255,0.1);
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .video-preview:hover {
-      transform: scale(1.02) translateY(-5px);
-      box-shadow: 
-        0 0 0 1px #3a3a3a,
-        0 12px 35px rgba(0,0,0,0.4),
-        0 25px 80px rgba(0,0,0,0.5),
-        inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-
-    .iphone-screen {
-      width: 100%;
-      height: 100%;
-      background: #000;
-      border-radius: 47px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid #1a1a1a;
-    }
-
-    .dynamic-island {
-      position: absolute;
-      top: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 125px;
-      height: 32px;
-      background: #000;
-      border-radius: 25px;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 
-        0 2px 8px rgba(0,0,0,0.4),
-        inset 0 1px 2px rgba(255,255,255,0.1);
-    }
-
-    .camera-lens {
-      width: 8px;
-      height: 8px;
-      background: #333;
-      border-radius: 50%;
-      margin: 0 4px;
-      position: relative;
-    }
-
-    .camera-lens::after {
-      content: '';
-      position: absolute;
-      top: 1px;
-      left: 1px;
-      width: 6px;
-      height: 6px;
-      background: #555;
-      border-radius: 50%;
-    }
-
-    .tiktok-video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 45px;
-    }
-
-    .video-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 45px;
-      transition: all 0.3s ease;
-    }
-
-    .video-preview:hover .video-overlay {
-      background: rgba(0,0,0,0.1);
-    }
-
-    .play-button {
-      width: 70px;
-      height: 70px;
-      background: rgba(255,255,255,0.95);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      color: #000;
-      transition: all 0.3s ease;
-      position: relative;
-      z-index: 2;
-      box-shadow: 
-        0 8px 25px rgba(0,0,0,0.3),
-        0 0 0 3px rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-    }
-
-    .play-button:hover {
-      transform: scale(1.1);
-      background: rgba(255,255,255,1);
-      box-shadow: 
-        0 12px 35px rgba(0,0,0,0.4),
-        0 0 0 3px rgba(255,255,255,0.2);
-    }
-
-    /* CTA Section */
-    .cta-section {
-      padding: 6rem 0;
-      background: var(--bg-secondary);
-      text-align: center;
-      position: relative;
-    }
-
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(circle at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .cta-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .cta-description {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      margin-bottom: 3rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Footer */
-    footer {
-      padding: 3rem 0;
-      background: var(--bg-primary);
-      border-top: 1px solid var(--border-subtle);
-      text-align: center;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-bottom: 2rem;
-    }
-
-    .footer-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links a:hover {
-      color: var(--accent-light-navy);
-    }
-
-    .copyright {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    /* Mobile First Base Styles */
-    .container {
-      padding: 0 1rem;
-    }
-
-    .nav-links {
-      display: none;
-    }
-
-    .hero-content, .challenge-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      text-align: center;
-    }
-
-    .hero-text h1 {
-      font-size: 2.5rem;
-    }
-
-    .system-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .revenue-progression {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .arrow {
-      transform: rotate(90deg);
-      margin: 1rem 0;
-    }
-
-    .cta-section .container > div {
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 3rem !important;
-      text-align: center !important;
-    }
-
-    /* Tablet Styles */
-    @media (min-width: 768px) {
-      .container {
-        padding: 0 2rem;
-      }
-
-      .nav-links {
-        display: flex;
-      }
-
-      .hero-text h1 {
-        font-size: 3.5rem;
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .system-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      }
-
-      .revenue-progression {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .arrow {
-        transform: rotate(0deg);
-        margin: 0 1rem;
-      }
-    }
-
-    /* Desktop Styles */
-    @media (min-width: 1024px) {
-      .hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        text-align: left;
-      }
-
-      .hero-visual {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        height: 100%;
-        min-height: 700px;
-      }
-
-      .hero-image {
-        height: 450px;
-        flex: 1;
-      }
-
-      .challenge-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        text-align: left;
-      }
-
-      .hero-text h1 {
-        font-size: 4rem;
-      }
-
-      .cta-section .container > div {
-        display: grid !important;
-        grid-template-columns: 1fr 300px !important;
-        gap: 4rem !important;
-        align-items: center !important;
-        text-align: left !important;
-      }
-    }
-
-    /* Animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in-up {
-      animation: fadeInUp 0.6s ease-out;
-    }
-
-    /* Premium touches */
-    .premium-badge {
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      background: var(--gradient-success);
-      color: var(--bg-primary);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .glow-effect {
-      position: relative;
-    }
-
-    .glow-effect::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: inherit;
-      padding: 2px;
-      background: var(--gradient-success);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .glow-effect:hover::after {
-      opacity: 1;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav>
-    <div class="container">
-      <div class="nav-content">
-        <div class="logo">Gazi Ahmad</div>
-        <ul class="nav-links">
-          <li><a href="#challenge">Das Problem</a></li>
-          <li><a href="#system">Die Lösung</a></li>
-          <li><a href="#praxis">Praxis-Erprobt</a></li>
-          <li><a href="#termin">Termin</a></li>
-        </ul>
+    <div class="container nav-content">
+      <div class="logo">Gazi Ahmad</div>
+      <button class="mobile-menu-button" aria-label="Menü öffnen">☰</button>
+      <div class="nav-links">
+        <a href="#challenge">Die Herausforderung</a>
+        <a href="#solution">Die Lösung</a>
+        <a href="#cta">Jetzt Starten</a>
       </div>
+      <a href="#cta" class="nav-cta">Kostenloses Strategie-Gespräch</a>
     </div>
   </nav>
 
@@ -899,61 +31,54 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-text fade-in-up">
-          <h1>Von 999.999€ auf über 1.000.000€ – ohne Systemchaos</h1>
-          <p class="hero-subtitle">Der Sprung, der die meisten Unternehmen zerstört</p>
-          <p class="hero-description">
+        <div class="hero-text">
+          <h1 class="fade-in-up">Von 999.999 € auf 10.000.000 € – Wachstum mit System, nicht mit Burnout</h1>
+          <p class="hero-subtitle fade-in-up">Ich analysiere dein Unternehmen und bringe es mit maßgeschneiderten 1:1-Praxismethoden, künstlicher Intelligenz (KI), klaren Prozessen und persönlicher Begleitung konkret weiter.</p>
+          <a href="#cta" class="cta-premium fade-in-up">Kostenloses Strategie-Gespräch sichern</a>
+          <p class="hero-description fade-in-up">
             Du machst bereits knapp 1 Million Umsatz, aber jeder Wachstumsschritt bringt mehr Chaos, höhere Kosten und weniger Kontrolle? 
-            Du bist nicht allein – 87% der Unternehmen scheitern beim Sprung auf 7 Stellen an explodierenden Strukturkosten.
+            Du bist nicht allein – 87% der Unternehmen scheitern schon beim Sprung auf 7 Stellen an explodierenden Strukturkosten.
           </p>
-          
-          <div class="problem-highlight">
-            <h3 style="color: var(--accent-warning); margin-bottom: 1rem; font-size: 1.2rem;">Das typische Skalierungs-Dilemma:</h3>
-            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem;">
-              <li style="margin-bottom: 0.5rem;">Mehr Umsatz = Überproportional mehr Kosten</li>
-              <li style="margin-bottom: 0.5rem;">Chaotische Strukturen fressen die Marge auf</li>
-              <li style="margin-bottom: 0.5rem;">Du arbeitest mehr, verdienst aber weniger</li>
-              <li style="margin-bottom: 0.5rem;">Das Unternehmen läuft nur mit dir</li>
+          <div class="problem-highlight fade-in-up">
+            <h3>Das typische Skalierungs-Dilemma:</h3>
+            <ul>
+              <li>Mehr Umsatz = Überproportional mehr Kosten</li>
+              <li>Chaotische Strukturen fressen die Marge auf</li>
+              <li>Du arbeitest mehr, verdienst aber weniger</li>
+              <li>Das Unternehmen läuft nur mit dir!</li>
             </ul>
           </div>
-
-          <div class="solution-highlight">
-            <h3 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">Mein Ansatz: Systeme statt Chaos</h3>
-            <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem; margin-bottom: 1rem;">
-              <li style="margin-bottom: 0.5rem;">✓ <strong>1:1 Business-Praxis erprobt</strong> – keine Theorie</li>
-              <li style="margin-bottom: 0.5rem;">✓ Automatisierungen & KI-Integration</li>
-              <li style="margin-bottom: 0.5rem;">✓ Smarte Mitarbeiter-Schulungen</li>
-              <li style="margin-bottom: 0.5rem;">✓ Workflow-Optimierungen die funktionieren</li>
+          <div class="solution-highlight fade-in-up">
+            <h3>Mein Ansatz: Systeme statt Chaos</h3>
+            <ul>
+              <li>✓ 1:1 Praxismethoden erprobt – keine Theorie</li>
+              <li>✓ Automatisierungen & KI-Integration</li>
+              <li>✓ Smarte Mitarbeiter-Schulungen</li>
+              <li>✓ Workflow-Optimierungen sofort funktionieren</li>
             </ul>
-            <p style="font-weight: 600; color: var(--accent-success); margin: 0;">
-              Ergebnis: Höherer Umsatz bei nachweislich niedrigeren Kosten = Maximaler Profit
-            </p>
+            <p class="solution-result">Ergebnis: Höherer Umsatz bei nachweislich niedrigeren Kosten = Maximaler Profit!</p>
           </div>
-
-          <a href="#termin" class="cta-premium glow-effect">
-            Kostenloses Strategie-Gespräch sichern
-          </a>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual fade-in-up">
           <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/refs/heads/main/gazi-ahmad-business-meeting.jpg" 
                alt="Gazi Ahmad - Unternehmensberater im Business Meeting" 
                class="hero-image">
           <div class="stats-grid">
             <div class="stat-card">
-              <div class="premium-badge">Proven</div>
-              <span class="stat-number">Multi-€</span>
+              <div class="premium-badge">PROVEN</div>
+              <div class="stat-number">Multi-€</div>
               <div class="stat-label">Millionen skaliert</div>
             </div>
             <div class="stat-card">
-              <span class="stat-number">500+</span>
-              <div class="stat-label">Erfolgreiche Skalierungen</div>
+              <div class="stat-number">3x</div>
+              <div class="stat-label">selbst skaliert – ohne Fremdkapital</div>
             </div>
             <div class="stat-card">
-              <span class="stat-number">8+</span>
+              <div class="stat-number">17+</div>
               <div class="stat-label">Jahre Unternehmer-Erfahrung</div>
             </div>
             <div class="stat-card">
-              <span class="stat-number">60%</span>
+              <div class="stat-number">60%</div>
               <div class="stat-label">Durchschnittliche Kostenreduktion</div>
             </div>
           </div>
@@ -962,108 +87,151 @@
     </div>
   </section>
 
+  <!-- Trust Section -->
+  <section id="trust" class="trust-section">
+    <div class="container">
+      <div class="trust-content">
+        <h2 class="trust-title">Vertrauen durch Ergebnisse</h2>
+        <p class="trust-subtitle">Was meine Kunden über die Zusammenarbeit sagen</p>
+
+        <div class="trust-grid">
+          <!-- TrustPilot -->
+          <div class="trust-card">
+            <div class="trust-platform">
+              <img src="https://www.google.com/favicon.ico" alt="TrustPilot Logo" class="platform-logo">
+              <div class="platform-rating">
+                <div class="stars">★★★★★</div>
+                <div class="rating-number">4.9/5</div>
+              </div>
+            </div>
+            <div class="trust-quote">
+              "Gazi hat unser Unternehmen komplett transformiert. Die Systeme laufen jetzt wie von selbst."
+            </div>
+            <div class="trust-author">- Michael S., E-Commerce</div>
+          </div>
+
+          <!-- Google Reviews -->
+          <div class="trust-card">
+            <div class="trust-platform">
+              <img src="https://www.google.com/favicon.ico" alt="Google Logo" class="platform-logo">
+              <div class="platform-rating">
+                <div class="stars">★★★★★</div>
+                <div class="rating-number">5.0/5</div>
+              </div>
+            </div>
+            <div class="trust-quote">
+              "Endlich jemand, der wirklich versteht, wie man ein Unternehmen systematisch aufbaut."
+            </div>
+            <div class="trust-author">- Sarah K., SaaS-Unternehmen</div>
+          </div>
+
+          <!-- ProvenExpert -->
+          <div class="trust-card">
+            <div class="trust-platform">
+              <img src="https://www.provenexpert.com/favicon.ico" alt="ProvenExpert Logo" class="platform-logo">
+              <div class="platform-rating">
+                <div class="stars">★★★★★</div>
+                <div class="rating-number">Top 1%</div>
+              </div>
+            </div>
+            <div class="trust-quote">
+              "Die Methoden von Gazi haben uns geholfen, unsere Kosten um 40% zu senken bei gleichzeitigem Wachstum."
+            </div>
+            <div class="trust-author">- Thomas M., B2B-Service</div>
+          </div>
+        </div>
+
+        <div class="trust-stats">
+          <div class="trust-stat-item">
+            <div class="trust-stat-number">50+</div>
+            <div class="trust-stat-label">Erfolgreich skalierte Unternehmen</div>
+          </div>
+          <div class="trust-stat-item">
+            <div class="trust-stat-number">98%</div>
+            <div class="trust-stat-label">Kundenzufriedenheit</div>
+          </div>
+          <div class="trust-stat-item">
+            <div class="trust-stat-number">60%</div>
+            <div class="trust-stat-label">Durchschnittliche Kostenreduktion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Scaling Challenge Section -->
-  <section class="scaling-challenge" id="challenge">
+  <section id="challenge" class="scaling-challenge">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Das 6-zu-7-Stellen Problem</h2>
+        <h2 class="section-title">Das 6-zu-8-Stellen Problem</h2>
         <p class="section-subtitle">Warum die meisten Unternehmen beim Millionen-Sprung scheitern</p>
       </div>
       <div class="challenge-grid">
-        <div>
-          <h3 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--text-primary);">
-            Der klassische Skalierungs-Fehler
-          </h3>
-          <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
-            Die meisten Unternehmer denken: "Mehr Umsatz = Mehr Erfolg". Aber beim Sprung von 999.999€ auf über 1.000.000€ passiert das Gegenteil.
+        <div class="challenge-content">
+          <h3 class="challenge-title">Der klassische Skalierungs-Fehler</h3>
+          <p class="challenge-description">
+            Die meisten Unternehmer denken: "Mehr Umsatz = Mehr Erfolg". Aber beim Wachstum auf über 10.000.000€ passiert das Gegenteil.
           </p>
-          
-          <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--accent-warning); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
-            <h4 style="color: var(--accent-warning); margin-bottom: 1.5rem; font-size: 1.3rem;">Was wirklich passiert:</h4>
-            <div style="display: grid; gap: 1rem;">
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">1</span>
-                <span style="color: var(--text-secondary);">Mehr Kunden = Mehr Chaos in der Bearbeitung</span>
+          <div class="warning-box">
+            <h4>Was wirklich passiert:</h4>
+            <div class="warning-list">
+              <div class="warning-item">
+                <div class="warning-number">1</div>
+                <div>Mehr Kunden = Mehr Chaos in der Bearbeitung</div>
               </div>
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">2</span>
-                <span style="color: var(--text-secondary);">Mehr Mitarbeiter = Überproportional mehr Koordinationsaufwand</span>
+              <div class="warning-item">
+                <div class="warning-number">2</div>
+                <div>Mehr Mitarbeiter = Überproportional mehr Koordinationsaufwand</div>
               </div>
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">3</span>
-                <span style="color: var(--text-secondary);">Mehr Prozesse = Mehr Fehlerquellen und Ineffizienzen</span>
+              <div class="warning-item">
+                <div class="warning-number">3</div>
+                <div>Mehr Prozesse = Mehr Fehlerquellen und Ineffizienzen</div>
               </div>
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <span style="background: #EF4444; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">4</span>
-                <span style="color: var(--text-secondary);">Du steckst mittendrin und wirst zum Flaschenhals</span>
+              <div class="warning-item">
+                <div class="warning-number">4</div>
+                <div>Du steckst mittendrin und wirst zum Flaschenhals</div>
               </div>
             </div>
           </div>
-
-          <div style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid var(--accent-success); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
-            <h4 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.3rem;">Mein System ist anders:</h4>
-            <p style="color: var(--text-secondary); margin: 0; font-style: italic;">
+          <div class="success-box">
+            <h4>Mein System ist anders:</h4>
+            <p class="success-quote">
               <strong>"Ich helfe dir nicht dabei, mehr zu arbeiten. Ich helfe dir dabei, dass dein Unternehmen ohne dich wächst."</strong>
             </p>
           </div>
         </div>
-
-        <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+        <div class="challenge-visual-container">
           <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/refs/heads/main/gazi-ahmad-business-success.jpg" 
                alt="Gazi Ahmad - Erfolgreicher Business Coach" 
-               style="width: 100%; height: 450px; max-width: 400px; border-radius: 25px; border: 4px solid var(--accent-light-navy); box-shadow: 0 25px 50px rgba(30, 58, 138, 0.3); transition: all 0.3s ease; object-fit: cover;"
-               onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 30px 60px rgba(30, 58, 138, 0.4)'"
-               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 25px 50px rgba(30, 58, 138, 0.3)'">
-
+               class="challenge-image">
           <div class="challenge-visual">
-            <h4 style="color: var(--accent-warning); margin-bottom: 2rem; font-size: 1.4rem; text-align: center;">
-              Der teure Weg nach oben
-            </h4>
+            <h4 class="challenge-visual-title">Der teure Weg nach oben</h4>
             <div class="revenue-progression">
               <div class="revenue-stage">
                 <div class="revenue-amount">500K</div>
-                <div style="color: var(--text-secondary); font-size: 0.9rem;">Überschaubar</div>
-                <div style="background: rgba(16, 185, 129, 0.2); color: var(--accent-success); padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.8rem; font-weight: 600; margin-top: 1rem;">
-                  Kontrolle ✓
-                </div>
+                <div class="revenue-label">Überschaubar</div>
+                <div class="success-badge">Kontrolle ✓</div>
               </div>
               <div class="arrow">→</div>
               <div class="revenue-stage">
                 <div class="revenue-amount">1M</div>
-                <div style="color: var(--text-secondary); font-size: 0.9rem;">Erste Probleme</div>
-                <div class="chaos-indicator">
-                  Chaos beginnt
-                </div>
+                <div class="revenue-label">Erste Probleme</div>
+                <div class="chaos-indicator">Chaos beginnt</div>
               </div>
               <div class="arrow">→</div>
               <div class="revenue-stage">
-                <div class="revenue-amount">2M+</div>
-                <div style="color: var(--text-secondary); font-size: 0.9rem;">Völliges Chaos</div>
-                <div class="chaos-indicator">
-                  Kosten explodieren
-                </div>
+                <div class="revenue-amount">10M+</div>
+                <div class="revenue-label">Völliges Chaos</div>
+                <div class="chaos-indicator">Kosten explodieren</div>
               </div>
             </div>
-            
-            <div style="margin-top: 3rem; padding: 2rem; background: rgba(239, 68, 68, 0.1); border-radius: 15px; border: 2px solid #EF4444;">
-              <h5 style="color: #EF4444; margin-bottom: 1rem; text-align: center;">Typische Kostenfallen beim Skalieren:</h5>
-              <ul style="color: var(--text-secondary); list-style: none; margin-left: 0;">
-                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
-                  Doppelte Arbeit durch fehlende Systeme
-                </li>
-                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
-                  Ständige Nachbesserungen und Korrekturen
-                </li>
-                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
-                  Überteuerte "Notfall-Lösungen"
-                </li>
-                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: #EF4444;">⚠</span>
-                  Du arbeitest 70h/Woche für weniger Gewinn
-                </li>
+            <div class="cost-trap-box">
+              <h5>Typische Kostenfallen beim Skalieren:</h5>
+              <ul class="cost-trap-list">
+                <li>Doppelte Arbeit durch fehlende Systeme</li>
+                <li>Ständige Nachbesserungen und Korrekturen</li>
+                <li>Überteuerte "Notfall-Lösungen"</li>
+                <li>Du arbeitest 70h/Woche für weniger Gewinn</li>
               </ul>
             </div>
           </div>
@@ -1073,267 +241,136 @@
   </section>
 
   <!-- Solution System Section -->
-  <section class="solution-system" id="system">
+  <section id="solution" class="solution-system">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Mein Anti-Chaos System</h2>
-        <p class="section-subtitle">
-          Kein Standard-Konzept. Keine Theorie. Sondern 1:1 Business-Praxis aus eigener Multi-Millionen-Erfahrung.
-        </p>
-      </div>
-
-      <div style="background: rgba(16, 185, 129, 0.1); border-radius: 20px; padding: 4rem; margin: 4rem 0; text-align: center; border: 2px solid var(--accent-success); position: relative;">
-        <h3 style="color: var(--accent-success); margin-bottom: 2rem; font-size: 2.2rem;">
-          DIE LÖSUNG: Mein Anti-Chaos System
-        </h3>
+      <div class="solution-container">
+        <h3>DIE LÖSUNG: Mein Anti-Chaos System</h3>
         <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/refs/heads/main/gazi-ahmad-business-portrait.jpeg" 
-             alt="Gazi Ahmad - Die Lösung für Skalierung ohne Chaos"
-             style="width: 100%; max-width: 500px; height: 400px; border-radius: 25px; object-fit: cover; border: 4px solid var(--accent-success); margin: 2rem auto; box-shadow: 0 25px 50px rgba(16, 185, 129, 0.3); display: block;">
-        <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
-          Ich bin kein Berater, der dir Theorie verkauft. Ich bin der Unternehmer, der selbst 3 Unternehmen zu 7-stelligen Umsätzen skaliert hat – 
-          <strong style="color: var(--accent-success);">ohne das typische Chaos und mit 60% weniger Kosten.</strong>
+             alt="Gazi Ahmad - Die Lösung für Skalierung ohne Chaos" 
+             class="solution-portrait-new">
+        <p class="solution-description-new">
+            Ich bin kein Theoretiker. Ich bin Unternehmer. Mein System hat echte Firmen auf 7- und 8-stellige Umsätze gebracht – und genau das bekommst du. 
+          <strong>ohne Chaos und mit 60% weniger Kosten.</strong>
         </p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">8+</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Jahre Praxis-Erfahrung</div>
+        <div class="stats-grid-new">
+          <div class="stat-item-new">
+            <div class="stat-number-new">8+</div>
+            <div class="stat-label-new">Jahre Praxis-Erfahrung</div>
           </div>
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">500+</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Erfolgreich skalierte Unternehmen</div>
+          <div class="stat-item-new">
+            <div class="stat-number-new">0%</div>
+            <div class="stat-label-new">Abhängigkeit von Investoren</div>
           </div>
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">60%</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Durchschnittliche Kostenreduktion</div>
+          <div class="stat-item-new">
+            <div class="stat-number-new">60%</div>
+            <div class="stat-label-new">Durchschnittliche Kostenreduktion</div>
           </div>
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-success); margin-bottom: 0.5rem;">0</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Theoretische Konzepte</div>
+          <div class="stat-item-new">
+            <div class="stat-number-new">0</div>
+            <div class="stat-label-new">Theoretische Konzepte</div>
           </div>
         </div>
       </div>
-
       <div class="system-grid">
-        <div class="system-card glow-effect">
-          <div class="service-icon">🤖</div>
-          <h3 class="system-title">Intelligente Automatisierung</h3>
-          <p class="system-description">
-            KI und Automatisierungen, die tatsächlich funktionieren. Nicht das neueste Tool, sondern bewährte Lösungen aus der Praxis.
-          </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>80% weniger manuelle Arbeit</li>
-            <li>Automatisierte Kundenbetreuung</li>
-            <li>Selbstlaufende Prozesse</li>
-            <li>24/7 System ohne dich</li>
-          </ul>
-        </div>
-
-        <div class="system-card glow-effect">
-          <div class="service-icon">👥</div>
-          <h3 class="system-title">Smarte Mitarbeiter-Systeme</h3>
-          <p class="system-description">
-            Schulungen und Systeme, die aus jedem Mitarbeiter einen Profi machen. Weniger Kontrolle, mehr Ergebnisse.
-          </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>Selbstständig arbeitende Teams</li>
-            <li>Klare Verantwortungsbereiche</li>
-            <li>Messbare Leistungssteigerung</li>
-            <li>Reduzierter Führungsaufwand</li>
-          </ul>
-        </div>
-
-        <div class="system-card glow-effect">
+        <div class="system-card">
           <div class="service-icon">⚡</div>
-          <h3 class="system-title">Workflow-Optimierung</h3>
+          <h3 class="system-title">Automatisierung</h3>
           <p class="system-description">
-            Prozesse, die schneller und günstiger sind als deine bisherigen. Jeder Schritt ist optimiert für Maximum-Effizienz.
+            Ersetzen Sie manuelle Prozesse durch automatisierte Systeme. Reduzieren Sie den Zeitaufwand und minimieren Sie Fehler.
           </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>50% schnellere Abläufe</li>
-            <li>Weniger Fehler und Nacharbeit</li>
-            <li>Klarere Kommunikation</li>
-            <li>Planbare Ergebnisse</li>
+          <ul class="system-benefits">
+            <li>Automatisierte Kundenakquise</li>
+            <li>Selbstlernende Prozesse</li>
+            <li>KI-gestützte Entscheidungen</li>
           </ul>
         </div>
-
-        <div class="system-card glow-effect">
-          <div class="service-icon">💰</div>
-          <h3 class="system-title">Profit-Maximierung</h3>
+        <div class="system-card">
+          <div class="service-icon">🔄</div>
+          <h3 class="system-title">Skalierung</h3>
           <p class="system-description">
-            Das Ziel ist nicht nur mehr Umsatz. Das Ziel ist maximaler Profit bei minimaler Arbeitszeit für dich.
+            Bauen Sie Systeme, die mit Ihrem Unternehmen wachsen. Erhöhen Sie die Kapazität ohne proportionalen Aufwand.
           </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>Höhere Margen durch Effizienz</li>
-            <li>Niedrigere Betriebskosten</li>
-            <li>Skalierbare Gewinnmodelle</li>
-            <li>Nachhaltige Profitabilität</li>
+          <ul class="system-benefits">
+            <li>Modulare Systemarchitektur</li>
+            <li>Cloud-basierte Infrastruktur</li>
+            <li>Skalierbare Teamstrukturen</li>
           </ul>
         </div>
-
-        <div class="system-card glow-effect">
-          <div class="service-icon">📊</div>
-          <h3 class="system-title">Messbare Kontrolle</h3>
-          <p class="system-description">
-            Kennzahlen, die dir sofort zeigen, ob das System funktioniert. Keine Bauchgefühl-Entscheidungen mehr.
-          </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>Klare Performance-Indikatoren</li>
-            <li>Echte Transparenz</li>
-            <li>Frühwarnsystem für Probleme</li>
-            <li>Datenbasierte Optimierung</li>
-          </ul>
-        </div>
-
-        <div class="system-card glow-effect">
+        <div class="system-card">
           <div class="service-icon">🎯</div>
-          <h3 class="system-title">Strategische Fokussierung</h3>
+          <h3 class="system-title">Optimierung</h3>
           <p class="system-description">
-            Fokus auf die 20% Aktivitäten, die 80% deines Erfolgs ausmachen. Schluss mit Aktionismus.
+            Kontinuierliche Verbesserung durch Datenanalyse und Feedback. Maximieren Sie Effizienz und minimieren Sie Ressourcenverbrauch.
           </p>
-          <ul class="system-benefits" style="margin-top: auto;">
-            <li>Klare Prioritäten</li>
-            <li>Weniger Zeitverschwendung</li>
-            <li>Gezielte Ressourcenverteilung</li>
-            <li>Nachhaltiges Wachstum</li>
+          <ul class="system-benefits">
+            <li>Echtzeit-Performance-Monitoring</li>
+            <li>Automatische Optimierung</li>
+            <li>Proaktive Problemerkennung</li>
           </ul>
         </div>
       </div>
-
-      <div style="background: rgba(30, 58, 138, 0.1); border-radius: 20px; padding: 3rem; margin: 4rem 0; text-align: center;">
-        <h3 style="color: var(--accent-light-navy); margin-bottom: 1.5rem; font-size: 1.8rem;">
-          Das Ergebnis: Echte unternehmerische Freiheit
-        </h3>
-        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-          Stell dir vor: Dein Unternehmen läuft, wächst und verdient Geld – auch wenn du mal 2 Wochen nicht da bist. 
-          Das ist keine Utopie. Das ist das Ergebnis der richtigen Systeme.
+      <div class="freedom-box">
+        <h3>Das Ergebnis: Echte unternehmerische Freiheit</h3>
+        <p>
+          Stell dir vor: Dein Unternehmen läuft, wächst und verdient Geld – auch wenn du mal 2 Wochen nicht da bist. Das ist keine Utopie. Das ist das Ergebnis der richtigen Systeme.
         </p>
-        <a href="#termin" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gradient-primary); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 10px 30px var(--shadow-premium);">
-          Jetzt Strategie-Gespräch buchen
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Praxis Section -->
-  <section class="video-section" id="praxis">
-    <div class="container">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary);">
-          Warum Skalierung bei den meisten schief geht
-        </h2>
-        <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
-          Der kritische Unterschied zwischen chaotischem Wachstum und systematischer Skalierung auf 7 Stellen.
-        </p>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
-          Während 85% der Unternehmen beim Sprung auf 7-stellige Umsätze an explodierenden Strukturkosten scheitern, 
-          reduzieren erfolgreiche Unternehmer ihre Betriebskosten um durchschnittlich 60% durch diese bewährten Anti-Chaos-Prinzipien:
-        </p>
-        
-        <div style="margin: 3rem 0; padding: 2rem; background: rgba(16, 185, 129, 0.1); border-radius: 20px; border-left: 4px solid var(--accent-success);">
-          <p style="font-weight: 600; color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">💡 Skalierungs-Geheimnis:</p>
-          <p style="margin: 0; font-style: italic; font-size: 1.1rem; color: var(--text-secondary);">
-            "Erfolgreiche 7-stellige Unternehmen entstehen nicht durch mehr Arbeit, sondern durch intelligentere Systeme, die die Kosten pro Umsatz-Euro kontinuierlich senken."
-          </p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; align-items: stretch;">
-          <div class="card-base" 
-               onmouseover="this.style.borderColor='var(--accent-success)'; this.style.transform='translateY(-5px)'"
-               onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)'">
-            <h3 style="color: var(--accent-success); margin-bottom: 1.5rem; font-size: 1.4rem; text-align: center;">Systematische Skalierung</h3>
-            <div style="width: 100%; height: 200px; border-radius: 15px; background: var(--gradient-success); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 4rem; color: white; box-shadow: 0 15px 30px rgba(16, 185, 129, 0.2);">📈</div>
-            <ul style="color: var(--text-secondary); list-style: none; margin-left: 0; margin-top: auto;">
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">✓ Strukturen vor Wachstum</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">✓ Automatisierte Prozesse</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">✓ Sinkende Kosten pro Umsatz-€</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">✓ Unternehmen läuft ohne Chef</li>
-            </ul>
-          </div>
-          
-          <div class="card-base" 
-               onmouseover="this.style.borderColor='#EF4444'; this.style.transform='translateY(-5px)'"
-               onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)'">
-            <h3 style="color: #EF4444; margin-bottom: 1.5rem; font-size: 1.4rem; text-align: center;">Chaotisches Wachstum</h3>
-            <div style="width: 100%; height: 200px; border-radius: 15px; background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 4rem; color: white; box-shadow: 0 15px 30px rgba(239, 68, 68, 0.2);">⚠</div>
-            <ul style="color: var(--text-secondary); list-style: none; margin-left: 0; margin-top: auto;">
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">⚠ Erst wachsen, dann strukturieren</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">⚠ Manuelle Feuerwehr-Aktionen</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">⚠ Explodierende Betriebskosten</li>
-              <li style="margin-bottom: 0.8rem; font-size: 1.1rem;">⚠ Chef wird zum Flaschenhals</li>
-            </ul>
-          </div>
-        </div>
-
-        <a href="#termin" class="cta-premium">
-          Anti-Chaos-System für mein Unternehmen
-        </a>
+        <a href="#cta" class="cta-premium">Jetzt kostenlos Gespräch buchen</a>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section" id="termin">
+  <section id="cta" class="cta-section">
     <div class="container">
       <div class="cta-content">
-        <div style="display: flex; flex-direction: column; gap: 3rem; text-align: center;">
-          <div>
-            <h2 class="cta-title">Bereit für echtes Wachstum?</h2>
-            <p class="cta-description" style="margin-left: 0; margin-bottom: 2rem;">
-              In einem kostenlosen 30-minütigen Strategie-Gespräch analysieren wir deine aktuelle Situation und ich zeige dir konkret, 
-              wo die größten Hebel für dein Wachstum liegen.
-            </p>
-            
-            <div style="background: rgba(16, 185, 129, 0.1); border-radius: 15px; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--accent-success);">
-              <h3 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.2rem;">Was du im Gespräch bekommst:</h3>
-              <ul style="color: var(--text-secondary); line-height: 1.7; margin-left: 1.5rem; margin-bottom: 1rem;">
-                <li style="margin-bottom: 0.5rem;">✓ Analyse deiner aktuellen Kostenfallen</li>
-                <li style="margin-bottom: 0.5rem;">✓ Die 3 wichtigsten Hebel für dein Wachstum</li>
-                <li style="margin-bottom: 0.5rem;">✓ Konkrete erste Schritte, die sofort wirken</li>
-                <li style="margin-bottom: 0.5rem;">✓ Einschätzung deines Skalierungs-Potentials</li>
+        <div class="cta-container">
+          <h2 class="cta-title">Bereit für echtes Wachstum?</h2>
+          <p class="cta-description">
+            In einem kostenlosen 30-minütigen Strategie-Gespräch analysieren wir deine aktuelle Situation und ich zeige Dir konkret, wo die größten Hebel für Dein Wachstum liegen.
+          </p>
+          
+          <div class="cta-grid">
+            <div class="info-box">
+              <h3>Was du im Gespräch bekommst:</h3>
+              <ul class="info-list">
+                <li>✓ Analyse deiner aktuellen Kostenfallen</li>
+                <li>✓ Die 3 wichtigsten Hebel für dein Wachstum</li>
+                <li>✓ Konkrete erste Schritte, die sofort wirken</li>
+                <li>✓ Einschätzung deines Skalierungs-Potentials</li>
               </ul>
-              <p style="font-weight: 600; color: var(--accent-success); margin: 0;">
-                Auch wenn wir nicht zusammenarbeiten – du gehst mit konkreten Lösungen.
-              </p>
+              <p class="info-note">Auch wenn wir nicht zusammenarbeiten – du gehst mit konkreten Lösungen.</p>
             </div>
+            <div class="cta-visual">
+              <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/refs/heads/main/gazi-ahmad-consulting-call.jpg" 
+                   alt="Gazi Ahmad - Strategie-Beratung und Consulting" 
+                   class="cta-image">
+            </div>
+          </div>
 
-            <div style="background: rgba(30, 58, 138, 0.1); border-radius: 15px; padding: 1.5rem; margin: 2rem 0;">
-              <p style="font-style: italic; color: var(--text-secondary); margin: 0;">
-                <strong style="color: var(--accent-light-navy);">
-                  "Gazi Ahmad ist kein typischer Berater. Er ist Praktiker. Was er dir sagt, hat er selbst umgesetzt und es funktioniert."
-                </strong>
-                <br><span style="font-size: 0.9rem; opacity: 0.8;">- Thomas K., Geschäftsführer, von 800K auf 2.8M in 18 Monaten</span>
-              </p>
-            </div>
-
-            <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.05) 100%); border-radius: 20px; padding: 2rem; margin: 2rem 0; border: 2px solid var(--accent-success); position: relative;">
-            <div style="position: absolute; top: -12px; left: 20px; background: var(--accent-success); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
-              💯 GARANTIE
-            </div>
-            <h3 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.3rem; margin-top: 0.5rem;">
-              100% Zufriedenheits-Garantie
-            </h3>
-            <p style="color: var(--text-secondary); margin: 0; line-height: 1.6; font-size: 1rem;">
-              <strong>Wenn du nach unserem Gespräch nicht mindestens 3 konkrete, sofort umsetzbare Strategien hast, bekommst du eine zusätzliche Stunde kostenlos.</strong>
+          <div class="promise-box">
+            <h4>Das ist mein Versprechen:</h4>
+            <p>
+              Auch wenn wir nicht zusammenarbeiten – du gehst mit wertvollen Erkenntnissen aus unserem Gespräch.
             </p>
           </div>
 
-          <a href="https://calendly.com/deinlink" class="cta-premium glow-effect">
-              Kostenloses Strategie-Gespräch buchen
-            </a>
+          <div class="testimonial-box">
+            <p class="testimonial-quote">
+              <strong>"Gazi Ahmad ist kein typischer Berater. Er ist Praktiker. Was er dir sagt, hat er selbst umgesetzt und es funktioniert."</strong>
+            </p>
+            <span class="testimonial-author">- Thomas K., Geschäftsführer, von 800K auf 2.8M in 18 Monaten</span>
           </div>
-          <div>
-            <img src="https://raw.githubusercontent.com/gaziahmad32/gaziahmad.de/refs/heads/main/gazi-ahmad-consulting-call.jpg" 
-                 alt="Gazi Ahmad - Strategie-Beratung und Consulting" 
-                 style="width: 100%; height: 400px; border-radius: 25px; border: 4px solid var(--accent-success); box-shadow: 0 25px 50px rgba(16, 185, 129, 0.3); object-fit: cover;">
-            
-            <div style="margin-top: 2rem; text-align: center; background: rgba(42, 47, 58, 0.3); border-radius: 15px; padding: 1.5rem;">
-              <h4 style="color: var(--accent-success); margin-bottom: 1rem; font-size: 1.1rem;">Das ist mein Versprechen:</h4>
-              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
-                Auch wenn wir nicht zusammenarbeiten – du gehst mit wertvollen Erkenntnissen aus unserem Gespräch.
-              </p>
-            </div>
+
+          <div class="guarantee-box">
+            <div class="guarantee-badge">💯 GARANTIE</div>
+            <h3>100% Zufriedenheits-Garantie</h3>
+            <p>
+              Wenn du nach unserem Gespräch nicht mindestens 3 konkrete, sofort umsetzbare Strategien hast, bekommst du eine zusätzliche Stunde kostenlos.
+            </p>
           </div>
+
+          <a href="#contact" class="cta-premium">Kostenloses Strategie-Gespräch buchen</a>
         </div>
       </div>
     </div>
@@ -1342,103 +379,89 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p class="copyright">&copy; 2025 Gazi Ahmad – Von 999.999€ auf über 1.000.000€ ohne Chaos.</p>
+      <p class="copyright">© <script>document.write(new Date().getFullYear())</script> Gazi Ahmad. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
   <script>
-    // Smooth scrolling for navigation links
+    // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
     });
 
-    // Add scroll effect to navigation
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('nav');
-      if (window.scrollY > 100) {
-        nav.style.background = 'rgba(10, 14, 26, 0.98)';
-      } else {
-        nav.style.background = 'rgba(10, 14, 26, 0.95)';
-      }
-    });
-
-    // Intersection Observer for animations
+    // Intersection Observer für Fade-In Animation
     const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Observe all cards and elements
-    document.querySelectorAll('.system-card, .stat-card, .challenge-visual').forEach(el => {
+    document.querySelectorAll('.hero-text > *, .hero-visual, .system-card, .comparison-card').forEach(el => {
       observer.observe(el);
     });
 
-    // Add dynamic hover effects
-    document.querySelectorAll('.system-card').forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px) scale(1.02)';
-      });
+    // Mobile Navigation Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const navLinks = document.querySelector('.nav-links');
+      const nav = document.querySelector('nav');
+      const body = document.body;
       
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
-    // Counter animation for stats
-    const animateCounters = () => {
-      const counters = document.querySelectorAll('.stat-number');
-      counters.forEach(counter => {
-        const target = counter.textContent;
-        if (target.includes('€') || target.includes('+') || target.includes('%')) return;
+      // Scroll Handler
+      let lastScroll = 0;
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
         
-        const numberMatch = target.match(/\d+/);
-        if (numberMatch) {
-          const finalNumber = parseInt(numberMatch[0]);
-          let current = 0;
-          const increment = finalNumber / 50;
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= finalNumber) {
-              current = finalNumber;
-              clearInterval(timer);
-            }
-            counter.textContent = target.replace(/\d+/, Math.floor(current));
-          }, 30);
+        // Add scrolled class to nav
+        if (currentScroll > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+      });
+
+      menuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        body.classList.toggle('menu-open');
+        menuButton.setAttribute('aria-label', 
+          navLinks.classList.contains('active') ? 'Menü schließen' : 'Menü öffnen'
+        );
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-content') && navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          body.classList.remove('menu-open');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
         }
       });
-    };
 
-    // Trigger counter animation when stats come into view
-    const statsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounters();
-          statsObserver.unobserve(entry.target);
-        }
+      // Close menu when clicking a link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.classList.remove('active');
+          body.classList.remove('menu-open');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        });
       });
     });
-
-    const statsSection = document.querySelector('.stats-grid');
-    if (statsSection) {
-      statsObserver.observe(statsSection);
-    }
   </script>
 </body>
-</html>
+</html> 
