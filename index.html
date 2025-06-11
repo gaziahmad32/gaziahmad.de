@@ -14,16 +14,21 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <div class="container nav-content">
-      <div class="logo">Gazi Ahmad</div>
-      <button class="mobile-menu-button" aria-label="Menü öffnen">☰</button>
-      <div class="nav-links">
-        <a href="#challenge">Die Herausforderung</a>
-        <a href="#solution">Die Lösung</a>
-        <a href="#cta">Jetzt Starten</a>
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="/" class="nav__logo">Gazi Ahmad</a>
+      
+      <a href="#cta" class="nav__cta">Kostenloses Gespräch</a>
+      
+      <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-icon"></span>
+      </button>
+
+      <div id="nav-menu" class="nav__menu" aria-hidden="true">
+        <a href="#challenge" class="nav__link">Die Herausforderung</a>
+        <a href="#solution" class="nav__link">Die Lösung</a>
+        <a href="#cta" class="nav__link">Jetzt Starten</a>
       </div>
-      <a href="#cta" class="nav-cta">Kostenloses Strategie-Gespräch</a>
     </div>
   </nav>
 
@@ -416,8 +421,8 @@
 
     // Mobile Navigation Toggle
     document.addEventListener('DOMContentLoaded', function() {
-      const menuButton = document.querySelector('.mobile-menu-button');
-      const navLinks = document.querySelector('.nav-links');
+      const menuButton = document.querySelector('.nav__toggle');
+      const navLinks = document.querySelector('.nav__menu');
       const nav = document.querySelector('nav');
       const body = document.body;
       
@@ -439,17 +444,17 @@
       menuButton.addEventListener('click', function() {
         navLinks.classList.toggle('active');
         body.classList.toggle('menu-open');
-        menuButton.setAttribute('aria-label', 
-          navLinks.classList.contains('active') ? 'Menü schließen' : 'Menü öffnen'
+        menuButton.setAttribute('aria-expanded', 
+          navLinks.classList.contains('active') ? 'true' : 'false'
         );
       });
 
       // Close menu when clicking outside
       document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-content') && navLinks.classList.contains('active')) {
+        if (!event.target.closest('.nav__container') && navLinks.classList.contains('active')) {
           navLinks.classList.remove('active');
           body.classList.remove('menu-open');
-          menuButton.setAttribute('aria-label', 'Menü öffnen');
+          menuButton.setAttribute('aria-expanded', 'false');
         }
       });
 
@@ -458,7 +463,7 @@
         link.addEventListener('click', function() {
           navLinks.classList.remove('active');
           body.classList.remove('menu-open');
-          menuButton.setAttribute('aria-label', 'Menü öffnen');
+          menuButton.setAttribute('aria-expanded', 'false');
         });
       });
     });
