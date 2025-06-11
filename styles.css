@@ -716,24 +716,34 @@ nav.scrolled {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .revenue-stage {
   text-align: center;
   flex: 1;
+  min-width: 120px;
+  padding: 1rem;
+  background: rgba(42, 47, 58, 0.3);
+  border-radius: 15px;
+  border: 1px solid var(--border-subtle);
 }
 
 .revenue-amount {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .arrow {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-secondary);
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .success-badge {
