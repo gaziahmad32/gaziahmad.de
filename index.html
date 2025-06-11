@@ -497,9 +497,9 @@
       counterRef.set({ count: current + 1 });
   
       // Sichtbar nur mit Token im Link, z. B. ?admin=meinToken
-      const adminToken = "meinToken";
+      const adminToken = "admin";
       const params = new URLSearchParams(window.location.search);
-      if (params.get("admin") === adminToken) {
+      if (params.get("?") === adminToken) {
         const box = document.createElement("div");
         box.textContent = "Views: " + (current + 1);
         box.style.position = "fixed";
