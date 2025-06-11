@@ -11,6 +11,24 @@
   <meta name="keywords" content="Gazi Ahmad, Skalierung, 7-stelliger Umsatz, Kostenreduktion, Automatisierung, KI, Workflow-Optimierung, Business-Praxis, Profit-Maximierung">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Firebase über CDN einbinden -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyA2HajQDwbi_1wDbU0LOXyGM7-ZfgpDrfw",
+      authDomain: "gaziahmadde.firebaseapp.com",
+      projectId: "gaziahmadde",
+      storageBucket: "gaziahmadde.firebasestorage.app",
+      messagingSenderId: "700931968798",
+      appId: "1:700931968798:web:c17bc881ad419a5768830f",
+      measurementId: "G-PEDZ4Q8JF5"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -466,6 +484,36 @@
           menuButton.setAttribute('aria-expanded', 'false');
         });
       });
+    });
+  </script>
+  <script>
+    const counterRef = db.collection("views").doc("main");
+  
+    counterRef.get().then((doc) => {
+      let current = 0;
+      if (doc.exists) {
+        current = doc.data().count || 0;
+      }
+      counterRef.set({ count: current + 1 });
+  
+      // Sichtbar nur mit Token im Link, z. B. ?admin=meinToken
+      const adminToken = "meinToken";
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("admin") === adminToken) {
+        const box = document.createElement("div");
+        box.textContent = "Views: " + (current + 1);
+        box.style.position = "fixed";
+        box.style.bottom = "10px";
+        box.style.right = "10px";
+        box.style.background = "#000";
+        box.style.color = "#fff";
+        box.style.padding = "8px 12px";
+        box.style.fontSize = "14px";
+        box.style.zIndex = "9999";
+        box.style.borderRadius = "5px";
+        document.body.appendChild(box);
+        console.log("Views:", current + 1);
+      }
     });
   </script>
 </body>
